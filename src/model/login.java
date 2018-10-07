@@ -10,5 +10,9 @@ package model;
  * @author Jesus
  */
 public class login {
+    private String login ;
+    private String password ;
+
+
     
 }
