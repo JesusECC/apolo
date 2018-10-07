@@ -33,6 +33,7 @@ public class login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txt_password = new javax.swing.JPasswordField();
+        label1 = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -55,6 +56,9 @@ public class login extends javax.swing.JFrame {
         jLabel2.setText("Password :");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 133, -1, -1));
         getContentPane().add(txt_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 126, 145, 28));
+
+        label1.setText("Iniciar Sesisón");
+        getContentPane().add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -113,6 +117,7 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JButton btn_ingresar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private java.awt.Label label1;
     private javax.swing.JTextField txt_login;
     private javax.swing.JPasswordField txt_password;
     // End of variables declaration//GEN-END:variables
