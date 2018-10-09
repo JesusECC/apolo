@@ -31,24 +31,39 @@ public class fua extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        txtcodSalud = new javax.swing.JTextField();
+        txtNombreSalud = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        txtdni = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txtapePaterno = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        txtapeMaterno = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        txtOtrosNombres = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtEdad = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        txtFecha = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtFumador = new javax.swing.JTextField();
+        txtAireInterior = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        txtAireExterior = new javax.swing.JTextField();
+        txtInfeccionRespiratoria = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        txtFonendoscopio = new javax.swing.JTextField();
+        txtEsperirometro = new javax.swing.JTextField();
+        btnGuardar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -63,52 +78,120 @@ public class fua extends javax.swing.JFrame {
 
         jLabel3.setText("NOMBRE ESTABLECIMIENTO QUE REALIZA LA ATENCION");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 220, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 330, -1));
+        jPanel1.add(txtcodSalud, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 220, -1));
+        jPanel1.add(txtNombreSalud, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 330, -1));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("IDENTIFICACION"));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel10.setText("N° DOCUMENTO");
         jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
-        jPanel2.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 170, -1));
+        jPanel2.add(txtdni, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 170, -1));
 
         jLabel11.setText("APELLIDO PATERNO APELLIDO");
         jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
-        jPanel2.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 170, -1));
+        jPanel2.add(txtapePaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 170, -1));
 
         jLabel12.setText("PRIMER NORMBRE OTROS");
         jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, -1, -1));
-        jPanel2.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 150, -1));
+        jPanel2.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 170, -1));
 
         jLabel13.setText("APELLIDO MATERNO");
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
-        jPanel2.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 170, -1));
+        jPanel2.add(txtapeMaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 170, -1));
 
         jLabel14.setText("OTROS NOMBRES");
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
-        jPanel2.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, -1));
+        jPanel2.add(txtOtrosNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 170, -1));
 
-        jLabel15.setText("Sexo");
-        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, -1));
-
-        jRadioButton1.setText("Femenino");
-        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
-
-        jRadioButton2.setText("Masculino");
-        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, -1, -1));
+        jLabel4.setText("Edad");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, -1));
+        jPanel2.add(txtEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 170, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 400, 190));
         jPanel2.getAccessibleContext().setAccessibleName("");
 
         jLabel16.setText("FECHA DE ATENCION");
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, -1, -1));
-        jPanel1.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 110, -1));
+        jPanel1.add(txtFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 110, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 430));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setText("Tipo de Fumador");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jLabel7.setText("Conta. Aire Interior");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, -1));
+        jPanel3.add(txtFumador, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 100, -1));
+        jPanel3.add(txtAireInterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, 110, -1));
+
+        jLabel8.setText("Conta. Aire Exterior");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+
+        jLabel9.setText("Infección Respiratoria");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+        jPanel3.add(txtAireExterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, 110, -1));
+        jPanel3.add(txtInfeccionRespiratoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 130, -1));
+
+        jLabel17.setText("Fonendoscopio");
+        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, -1, -1));
+
+        jLabel18.setText("Espirometro");
+        jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, -1, -1));
+        jPanel3.add(txtFonendoscopio, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 90, -1));
+        jPanel3.add(txtEsperirometro, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 80, -1));
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 400, 120));
+
+        btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Tipo de Fumador : \n0: no fuma\n1=fumador pasivo\n2=fumador activo");
+        jTextArea1.setAutoscrolls(false);
+        jTextArea1.setEnabled(false);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, 140, 100));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        // TODO add your handling code here:
+        
+        String condEstablecimiento=txtcodSalud.getText();
+        String NombreSalud=txtNombreSalud.getText();
+        
+        String dni=txtdni.getText();
+        String apellidoPater=txtapePaterno.getText();
+        String apellidosMater=txtapeMaterno.getText();
+        String nombre=txtNombre.getText();
+        String otroNombre=txtOtrosNombres.getText();
+        String edad=txtEdad.getText();
+        String fumador=txtFumador.getText();
+        String aireInterior=txtAireInterior.getText();
+        String aireexterior=txtAireExterior.getText();
+        String infeccionresp=txtInfeccionRespiratoria.getText();
+        String fonendoscopio=txtFonendoscopio.getText();
+        String espirometro=txtEsperirometro.getText();
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -146,27 +229,42 @@ public class fua extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnGuardar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField txtAireExterior;
+    private javax.swing.JTextField txtAireInterior;
+    private javax.swing.JTextField txtEdad;
+    private javax.swing.JTextField txtEsperirometro;
+    private javax.swing.JTextField txtFecha;
+    private javax.swing.JTextField txtFonendoscopio;
+    private javax.swing.JTextField txtFumador;
+    private javax.swing.JTextField txtInfeccionRespiratoria;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtNombreSalud;
+    private javax.swing.JTextField txtOtrosNombres;
+    private javax.swing.JTextField txtapeMaterno;
+    private javax.swing.JTextField txtapePaterno;
+    private javax.swing.JTextField txtcodSalud;
+    private javax.swing.JTextField txtdni;
     // End of variables declaration//GEN-END:variables
 }

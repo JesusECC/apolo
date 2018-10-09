@@ -106,14 +106,10 @@ public class JFlogin extends javax.swing.JFrame {
               users dts= new users();
               dts.setName(txtlogin.getText());
               dts.setPassword(txtpass.getText());
-              
-              
               modelo = func.login(dts.getName(), dts.getPassword());
-              
-             
               if(func.totalregistros >0){
                   this.dispose();
-                  JFusers form = new JFusers();
+                  Principal form = new Principal();
                   form.toFront();
                   form.setVisible(true);
               }else{
