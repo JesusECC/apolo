@@ -31,7 +31,7 @@ public class ControllerUsers {
     totalregistros=0;
     modelo = new DefaultTableModel(null, titulos);
     
-    sSQL = "select * users where email like '"+buscar+"%' order by id";
+    sSQL = "select * from users where email like '%"+buscar+"%' order by id";
             
          try{
              Statement st= cn.createStatement();
@@ -41,7 +41,7 @@ public class ControllerUsers {
                  registro[0]= rs.getString("name");
                  registro[0]= rs.getString("email");
                  registro[0]= rs.getString("password");
-                 registro[0]= rs.getString("remember_toke");
+                 registro[0]= rs.getString("remember_token");
                  registro[0]= rs.getString("created_at");
                  registro[0]= rs.getString("created_at");
                  totalregistros= totalregistros+1;
@@ -53,6 +53,7 @@ public class ControllerUsers {
              return null;
          }   
 }
+    
     
     public boolean insertar (users dts){
         sSQL="insert into users(name,email,password,remember_token,created_at,updated_at)"+
@@ -127,4 +128,39 @@ public class ControllerUsers {
          }
          
      }
+     
+     /*LOGIN*/
+      public DefaultTableModel login(String login, String pass){
+    DefaultTableModel modelo;
+    String[] titulos  = {"ID","NAME","EMAIL","PASSWORD"};
+    String[] registro= new String[4];
+    totalregistros=0;
+    modelo = new DefaultTableModel(null, titulos);
+    
+    sSQL = "select * from users where name='"+login+"' and password='"+pass+"' order by id";
+            
+         try{
+             Statement st= cn.createStatement();
+             ResultSet rs= st.executeQuery(sSQL);
+             while(rs.next()){
+                 registro[0]= rs.getString("id");
+                 registro[0]= rs.getString("name");
+                 registro[0]= rs.getString("email");
+                 registro[0]= rs.getString("password");
+                 registro[0]= rs.getString("remember_token");
+                 registro[0]= rs.getString("created_at");
+                 registro[0]= rs.getString("created_at");
+                 totalregistros= totalregistros+1;
+                 modelo.addRow(registro);
+             }
+             return modelo;
+         }catch(Exception e){
+             JOptionPane.showConfirmDialog(null, e);
+             return null;
+         }   
+}
+     
+     
+     
+     
 }

@@ -208,7 +208,7 @@ public class JFusers extends javax.swing.JFrame {
         
         if(accion.equals("guardar")){
             if(func.insertar(dts)){
-                JOptionPane.showMessageDialog(rootPane, "El Producto fue registrado satisfactoriamente");
+                JOptionPane.showMessageDialog(rootPane, "Fue registrado satisfactoriamente");
             }
         }
         
